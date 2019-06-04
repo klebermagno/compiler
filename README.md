@@ -1,20 +1,20 @@
-## Compiler-example
+# Compiler-example
 
-# Crie uma gramática g4
+## Crie uma gramática g4
 
-# Crie seu código nw
+## Crie seu código nw
 
-# Use ANTLR para gerar o código intermediário confirme abaixo:
+## Use ANTLR para gerar o código intermediário confirme abaixo:
 
-# generate .o and .s file:
+## generate .o and .s file:
 
 $ java -jar $(ANTLR) -o output Narwhal.g4
 
-# compile:
+## compile:
 
 $ javac -cp $(ANTLR):output:. Main.java
 
-# Roda o app ANTLR e gera o .ll:
+## Roda o app ANTLR e gera o .ll:
 
 $ java -cp $(ANTLR):output:. Main test.nw > test.ll
 	clang test.ll
